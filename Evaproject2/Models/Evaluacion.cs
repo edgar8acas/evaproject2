@@ -10,7 +10,7 @@ namespace Evaproject2.Models
         public int ID { get; set; }
         public int CriterioID { get; set; }
         public int EvaluadorID { get; set; }
-        public int InscripcionID { get; set; }
+        //public int InscripcionID { get; set; }
 
 
         //Navigation properties
