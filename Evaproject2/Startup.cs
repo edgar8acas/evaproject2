@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Evaproject2.Models;
 
 namespace Evaproject2
 {
@@ -22,6 +24,9 @@ namespace Evaproject2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddDbContext<Evaproject2Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Evaproject2Context")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
