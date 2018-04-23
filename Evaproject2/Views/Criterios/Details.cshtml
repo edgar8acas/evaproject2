@@ -1,0 +1,36 @@
+﻿@model Evaproject2.Models.Criterio
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Criterio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Calificacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Calificacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FC)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FC)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FM)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

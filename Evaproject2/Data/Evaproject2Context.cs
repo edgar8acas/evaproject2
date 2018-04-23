@@ -17,5 +17,7 @@ namespace Evaproject2.Models
         public DbSet<Evaproject2.Models.Aspecto> Aspecto { get; set; }
 
         public DbSet<Evaproject2.Models.Convocatoria> Convocatoria { get; set; }
+
+        public DbSet<Evaproject2.Models.Criterio> Criterio { get; set; }
     }
 }
