@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Evaproject2.Models;
 
 namespace Evaproject2.Models
 {
@@ -14,5 +15,7 @@ namespace Evaproject2.Models
         }
 
         public DbSet<Evaproject2.Models.Aspecto> Aspecto { get; set; }
+
+        public DbSet<Evaproject2.Models.Convocatoria> Convocatoria { get; set; }
     }
 }

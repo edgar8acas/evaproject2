@@ -1,0 +1,101 @@
+﻿@model IEnumerable<Evaproject2.Models.Convocatoria>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FRegistro)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FEnvio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FEvaluacion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FResultados)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NoParticipantes)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NoEvaluadores)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RutaDescripcion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RutaResultados)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FC)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FM)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Criterio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FRegistro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FEnvio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FEvaluacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FResultados)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoParticipantes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoEvaluadores)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RutaDescripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RutaResultados)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Criterio.ID)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

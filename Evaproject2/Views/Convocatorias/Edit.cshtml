@@ -1,0 +1,89 @@
+﻿@model Evaproject2.Models.Convocatoria
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Convocatoria</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FRegistro" class="control-label"></label>
+                <input asp-for="FRegistro" class="form-control" />
+                <span asp-validation-for="FRegistro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FEnvio" class="control-label"></label>
+                <input asp-for="FEnvio" class="form-control" />
+                <span asp-validation-for="FEnvio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FEvaluacion" class="control-label"></label>
+                <input asp-for="FEvaluacion" class="form-control" />
+                <span asp-validation-for="FEvaluacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FResultados" class="control-label"></label>
+                <input asp-for="FResultados" class="form-control" />
+                <span asp-validation-for="FResultados" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoParticipantes" class="control-label"></label>
+                <input asp-for="NoParticipantes" class="form-control" />
+                <span asp-validation-for="NoParticipantes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoEvaluadores" class="control-label"></label>
+                <input asp-for="NoEvaluadores" class="form-control" />
+                <span asp-validation-for="NoEvaluadores" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CriterioID" class="control-label"></label>
+                <select asp-for="CriterioID" class="form-control" asp-items="ViewBag.CriterioID"></select>
+                <span asp-validation-for="CriterioID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RutaDescripcion" class="control-label"></label>
+                <input asp-for="RutaDescripcion" class="form-control" />
+                <span asp-validation-for="RutaDescripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RutaResultados" class="control-label"></label>
+                <input asp-for="RutaResultados" class="form-control" />
+                <span asp-validation-for="RutaResultados" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FC" class="control-label"></label>
+                <input asp-for="FC" class="form-control" />
+                <span asp-validation-for="FC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FM" class="control-label"></label>
+                <input asp-for="FM" class="form-control" />
+                <span asp-validation-for="FM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
