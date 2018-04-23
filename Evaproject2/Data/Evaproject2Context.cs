@@ -21,5 +21,7 @@ namespace Evaproject2.Models
         public DbSet<Evaproject2.Models.Criterio> Criterio { get; set; }
 
         public DbSet<Evaproject2.Models.Evaluacion> Evaluacion { get; set; }
+
+        public DbSet<Evaproject2.Models.Inscripcion> Inscripcion { get; set; }
     }
 }
