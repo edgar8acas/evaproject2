@@ -1,0 +1,11 @@
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\bin\Debug\netcoreapp2.0\Evaproject2.deps.json
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\bin\Debug\netcoreapp2.0\Evaproject2.runtimeconfig.json
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\bin\Debug\netcoreapp2.0\Evaproject2.runtimeconfig.dev.json
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\bin\Debug\netcoreapp2.0\Evaproject2.dll
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\bin\Debug\netcoreapp2.0\Evaproject2.pdb
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\obj\Debug\netcoreapp2.0\Evaproject2.csprojResolveAssemblyReference.cache
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\obj\Debug\netcoreapp2.0\Evaproject2.csproj.CoreCompileInputs.cache
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\obj\Debug\netcoreapp2.0\Evaproject2.AssemblyInfoInputs.cache
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\obj\Debug\netcoreapp2.0\Evaproject2.AssemblyInfo.cs
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\obj\Debug\netcoreapp2.0\Evaproject2.dll
+c:\users\edgar\source\repos\Evaproject2\Evaproject2\obj\Debug\netcoreapp2.0\Evaproject2.pdb
