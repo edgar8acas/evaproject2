@@ -23,5 +23,7 @@ namespace Evaproject2.Models
         public DbSet<Evaproject2.Models.Evaluacion> Evaluacion { get; set; }
 
         public DbSet<Evaproject2.Models.Inscripcion> Inscripcion { get; set; }
+
+        public DbSet<Evaproject2.Models.Usuario> Usuario { get; set; }
     }
 }
