@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Evaproject2</title>
+    <title>@ViewData["Title"] - Evaproject</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -26,13 +26,58 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Evaproject2</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Evaproject</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a asp-area="" asp-controller="Convocatorias" asp-action="Index" class="navbar-link dropdown-toggle"
+                           id="navbarDropdownMenuConvocatorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Convocatorias</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuConvocatorias">
+                            <a asp-area="" asp-controller="Convocatorias" asp-action="Index">Listar</a>
+                            <a asp-area="" asp-controller="Convocatorias" asp-action="Create" class="dropdown-item">Crear</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a asp-area="" asp-controller="Usuarios" asp-action="Index" class="navbar-link dropdown-toggle"
+                           id="navbarDropdownMenuUsuarios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuarios</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuUsuarios">
+                            <a asp-area="" asp-controller="Usuarios" asp-action="Index">Listar</a>
+                            <a asp-area="" asp-controller="Usuarios" asp-action="Create" class="dropdown-item">Crear</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a asp-area="" asp-controller="Evaluaciones" asp-action="Index" class="navbar-link dropdown-toggle"
+                           id="navbarDropdownMenuEvaluaciones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Evaluaciones</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuEvaluaciones">
+                            <a asp-area="" asp-controller="Evaluaciones" asp-action="Index">Listar</a>
+                            <a asp-area="" asp-controller="Evaluaciones" asp-action="Create" class="dropdown-item">Crear</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a asp-area="" asp-controller="Criterios" asp-action="Index" class="navbar-link dropdown-toggle"
+                           id="navbarDropdownMenuCriterios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Criterios</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuCriterios">
+                            <a asp-area="" asp-controller="Criterios" asp-action="Index">Listar</a>
+                            <a asp-area="" asp-controller="Criterios" asp-action="Create" class="dropdown-item">Crear</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a asp-area="" asp-controller="Aspectos" asp-action="Index" class="navbar-link dropdown-toggle"
+                           id="navbarDropdownMenuAspectos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aspectos</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuAspectos">
+                            <a asp-area="" asp-controller="Aspectos" asp-action="Index">Listar</a>
+                            <a asp-area="" asp-controller="Aspectos" asp-action="Create" class="dropdown-item">Crear</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a asp-area="" asp-controller="Inscripciones" asp-action="Index" class="navbar-link dropdown-toggle"
+                           id="navbarDropdownMenuInscripciones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inscripciones</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuInscripciones">
+                            <a asp-area="" asp-controller="Inscripciones" asp-action="Index">Listar</a>
+                            <a asp-area="" asp-controller="Inscripciones" asp-action="Create" class="dropdown-item">Crear</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -41,7 +86,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - Evaproject2</p>
+            <p>&copy; 2018 - Evaproject</p>
         </footer>
     </div>
 
